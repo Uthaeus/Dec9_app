@@ -1,24 +1,19 @@
-# README
+#Dec 9 Homework app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+-Build a rails app that uses postgresql
 
-Things you may want to cover:
+-Create a resource generator for blogs, that takes in at least 5 data fields (example title:string author:string subject:string, etc)
 
-* Ruby version
+-Finish out the crud functionality for blogs.
 
-* System dependencies
+-Create a controller with at least 4 static pages named home, titles, authors, and subjects.
 
-* Configuration
+-Display all of the authors on the authors page
 
-* Database creation
+-Display all of the titles on the titles page, as links that will take a user to the  selected blogs title's show page when clicked on.
 
-* Database initialization
+-Display all of the subjects on the subjects page, as links that will take a user to the selected blogs subjects show page when clicked on.
 
-* How to run the test suite
+-Create a nav bar that links to all relevant pages.
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+-Store the nav bar in a partial and render it to your application.html.erb
