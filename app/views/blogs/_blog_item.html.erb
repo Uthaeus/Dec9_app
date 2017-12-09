@@ -1,0 +1,9 @@
+<p><%= link_to blog_item.title, blog_show_path(blog_item) %></p>
+
+<p><%= blog_item.subtitle %></p>
+
+<p><%= blog_item.body %></p>
+
+<%= image_tag blog_item.thumb_image unless blog_item.thumb_image.nil? %>
+<%= link_to "Edit", edit_blog_path(blog_item) %>
+<%= link_to 'Delete Blog Item', blog_path(blog_item), method: :delete, data: { confirm: 'Are you sure?'} %>

@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+<%= image_tag @blog.thumb_image_path %>
 <p>
   <strong>Title:</strong>
   <%= @blog.title %>
@@ -20,10 +20,9 @@
   <%= @blog.description %>
 </p>
 
-<p>
-  <strong>Thumb image:</strong>
-  <%= @blog.thumb_image %>
-</p>
+
+  
+
 
 <%= link_to 'Edit', edit_blog_path(@blog) %> |
 <%= link_to 'Back', blogs_path %>
