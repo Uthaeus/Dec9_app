@@ -1,4 +1,12 @@
 <h1>Titles</h1>
-<p>Find me in app/views/pages/titles.html.erb</p>
 
+  <% @titles.each do |blog| %>
+      
+    <%= blog.title %>
+        
+    <%= link_to 'Show', blog %>
+    <%= link_to 'Edit', edit_blog_path(blog) %>
+    <%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
+      
+  <% end %>
 

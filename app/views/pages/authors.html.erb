@@ -1,4 +1,12 @@
 <h1>Authors</h1>
 
-
+  <% @authors.each do |blog| %>
+      
+    <%= blog.author %>
+        
+    <%= link_to 'Show', blog %>
+    <%= link_to 'Edit', edit_blog_path(blog) %>
+    <%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
+      
+  <% end %>
 
